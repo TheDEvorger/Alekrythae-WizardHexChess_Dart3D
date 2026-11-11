@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - three_js_sensors (0.2.0):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - three_js_sensors (from `.symlinks/plugins/three_js_sensors/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  three_js_sensors:
+    :path: ".symlinks/plugins/three_js_sensors/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
+  three_js_sensors: 588c345b9ae356162449f14d11f7d1cf49a713d0
+
+PODFILE CHECKSUM: 3ba3a73b1b12adcf321a227a745625fe0888cc82
+
+COCOAPODS: 1.17.0

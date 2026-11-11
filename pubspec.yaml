@@ -1,0 +1,36 @@
+name: wizard_hex_chess_dart3d
+description: Karanlık-fantezi 3D Gliński altıgen satranç ve amfi savaş oyunu.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  three_js: ^0.3.0
+  ffi: ^2.2.0
+  http: ^1.6.0
+  sqlite3: ^3.9.0
+  path_provider: ^2.1.6
+  path: ^1.9.1
+  audioplayers: ^6.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/game_logo.png
+    - assets/audio/
+
+# three_js_angle_renderer 0.0.1'in yamalı kopyası (bkz. third_party/three_js_angle_renderer/PATCHES.md):
+# her karede shader programı yeniden aranmasına yol açan ton eşleme hatası ve
+# Windows'ta yarım çizilmiş karelerin ekrana gelmesi (yırtılma/titreme) düzeltildi.
+dependency_overrides:
+  three_js_angle_renderer:
+    path: third_party/three_js_angle_renderer
